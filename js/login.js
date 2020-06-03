@@ -1,0 +1,30 @@
+$(function(){		
+    $("#btnReg").click(function(){
+        //1、
+        $.post(
+            "login.php",
+            {
+                "username":$("#username").val(),
+                "userPass":$("#userPass").val()
+            },
+            function(data){					
+                if(data=="success"){//登录成功！
+                    $("#messageBox").html("登录成功，跳转<a href='index.html'>首页</a>！");
+                    $("#messageBox").css({
+                        'color':'#0f0'
+                    })
+                    //记录cookie
+                    saveCookie("username",$("#username").val(),7);
+                    setTimeout(()=>{						
+                        location.href="index.html";	
+                    },2000);
+                }else{
+                    $("#messageBox").html("登录失败，用户名或者密码不正确！");
+                    $("#messageBox").css({
+                        'color':'red'
+                    })
+                }
+            }
+        );
+    });
+});

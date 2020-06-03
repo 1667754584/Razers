@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+	<form action="commod.php" method="post">
+		商品编号：<input type="text" name="typeId" /><br/>
+		商品名称：<input type="text" name="goodstype" /><br/>
+		商品描述：<input type="text" name="goodsname" /><br/>
+		<input type="submit" value="保存商品" />
+	</form>
+		
+	</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+	$.get("commod.php",function(data){
+		let objs = JSON.parse(data);
+		let htmlStr="";
+		objs.forEach(function(item){
+			htmlStr+=`<option value="${item.typeId}" >${item.goodsType}</option>`;
+		});
+		$("#typeId").html(htmlStr);
+	});
+
+});
+</script>
+

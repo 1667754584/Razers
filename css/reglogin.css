@@ -1,0 +1,78 @@
+.reg {
+  width: 378px;
+  height: 402px;
+  background-color: #222222;
+  border-radius: 1px solid #3c3c42;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -189px;
+  margin-top: -201px; }
+
+.reg_1 {
+  width: 330px;
+  margin: 0 auto; }
+
+.reg_1 div:nth-child(1) {
+  padding: 20px 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.05em;
+  color: #e4e4e4;
+  margin-top: 20px; }
+
+#username, #userPass {
+  display: block;
+  width: 310px;
+  height: 45px;
+  margin: 0;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: #000;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 14px; }
+
+#btnReg {
+  width: 100%;
+  display: block;
+  height: 45px;
+  margin: 24px 0;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #44d62c;
+  color: #020601;
+  transition: all .3s linear;
+  cursor: pointer; }
+
+#btnReg :hover {
+  background-color: #70fa59; }
+
+.reg_1 div {
+  max-width: 100%;
+  margin-bottom: 8px;
+  height: 100%; }
+
+.reg_1_a {
+  display: block;
+  width: 100%;
+  display: block;
+  height: 45px;
+  margin: 24px 0;
+  color: #5a5a5a;
+  font-size: 14px;
+  border: 1px solid #5a5a5a;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 35px;
+  transition: all  .3s linear; }
+
+.reg_1_a:hover {
+  color: #bbb0b0;
+  border: 1px solid #bbb0b0; }
